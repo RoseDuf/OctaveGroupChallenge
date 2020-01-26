@@ -4,6 +4,12 @@ from player import Player
 import api
 #from playsound import playsound
 
+songName1 = ""
+
+def getSongName():
+    print(songName1)
+    return songName1
+
 def songSearch():
     headers = {
         'Authorization': 'f9f6d21375373f9b69a826b6f564bd40',
@@ -14,7 +20,8 @@ def songSearch():
     songName = input("Enter a song name: ")
     songName = songName.replace(" ", "*")
     songName1 = songName.replace("*", "")
-    print(songName)
+    print(songName1)
+    
     params = (
         ('query', songName),)
     response = requests.get('https://conuhacks-2020.tsp.cld.touchtunes.com/v1/songs', headers=headers, params=params).json()

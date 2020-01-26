@@ -70,8 +70,10 @@ def findTimeStamp(time):
 def displayLyrics():
     
     songSearch2.songSearch()
+    songName = songSearch2.getSongName()
     
-    parseFile('../lyrics/billie jean.txt')
+    print(songName)
+    parseFile('../lyrics/' + songName + '.txt')
     
     starttime=time.time()
 
