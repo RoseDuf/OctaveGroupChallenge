@@ -4,13 +4,17 @@ from player import Player
 import api
 #from playsound import playsound
 
-songName1 = ""
+class Song:
+    def __init__(self, name):
+        self.name = name
+    
+    def setSongName(self, b):
+        self.name = b
+    def getSongName(self):
+        return self.name
+    
 
-def getSongName():
-    print(songName1)
-    return songName1
-
-def songSearch():
+def songSearch(song):
     headers = {
         'Authorization': 'f9f6d21375373f9b69a826b6f564bd40',
         'Accept': 'application/json',
@@ -20,6 +24,10 @@ def songSearch():
     songName = input("Enter a song name: ")
     songName = songName.replace(" ", "*")
     songName1 = songName.replace("*", "")
+    
+    thesong = song.setSongName(songName1)
+   # thesong.name = str(songName1)
+    
     print(songName1)
     
     params = (

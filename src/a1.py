@@ -69,10 +69,10 @@ def findTimeStamp(time):
     
 def displayLyrics():
     
-    songSearch2.songSearch()
-    songName = songSearch2.getSongName()
+    a = songSearch2.Song("doesn't matter")
+    songSearch2.songSearch(a)
+    songName = a.getSongName()
     
-    print(songName)
     parseFile('../lyrics/' + songName + '.txt')
     
     starttime=time.time()
@@ -121,7 +121,7 @@ def displayLyrics():
             timeStampFound = False
             
             
-        print(int(time.time() - starttime))
+        #print(int(time.time() - starttime))
         
         root.update_idletasks()
         root.update()
