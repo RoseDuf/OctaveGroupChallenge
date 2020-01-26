@@ -95,12 +95,10 @@ def displayLyrics():
     theButton = Button (root, text="Stop", command=lambda: stopPlayer(), font='Helvetica 21 bold')
     theButton.pack()
     
-    '''
-    image2 =Image.open('./image.jpg')
-    background_image = PhotoImage(file=image2)
-    background_label = Label(image=background_image)
-    background_label.pack()
-    '''
+    #background_image = PhotoImage(file='image.jpg')
+    #background_label = Label(root, image=background_image)
+    #background_label.pack()
+    
     
     targetSentence = ""
     
