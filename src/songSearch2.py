@@ -1,6 +1,7 @@
 import requests
 import json
-import player.py
+from player import Player
+import api
 #from playsound import playsound
 
 headers = {
@@ -74,5 +75,4 @@ try:
 except:
     print("File already exists")
 
-p = Player()
-p.play(theFile)
+player.play(theFile)

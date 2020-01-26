@@ -3,9 +3,8 @@
 import os
 import pygame
 import wget
-import pwd
-import grp
-
+#import pwd
+#import grp
 
 class Player:
     def __init__(self):
