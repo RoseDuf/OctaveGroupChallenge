@@ -8,12 +8,6 @@ class Lyric:
     sndingTime = 0
     sentence = ""
 
-    def printLyricContents():
-        print(sentenceNumber)
-        print(startingTime)
-        print(endingTime)
-        print(sentence)
-
 lyricList = []
         
 def parseFile(file):
