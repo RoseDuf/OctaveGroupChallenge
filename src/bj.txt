@@ -1,14 +1,15 @@
 ﻿1
-00:00:30,100 --> 00:00:34‚199
+00:00:02,100 --> 00:00:34‚199
 She was more like a beauty
 queen from a movie scene
 
 2
-00:00:34,401 --> 00:00:38‚700
+00:00:05,401 --> 00:00:38‚700
 I said don't mind but what
 do you mean I am the one
 
 3
-00:00:38,902 --> 00:00:44‚001
+00:00:08,902 --> 00:00:44‚001
 Who will dance on the
 floor in the round
+

@@ -72,6 +72,3 @@ try:
     open(theFile, 'wb').write(myfile.content)
 except:
     print("File already exists")
-
-p = Player()
-p.play(theFile)

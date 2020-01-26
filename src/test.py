@@ -2,6 +2,6 @@ import requests
 import json
 from player import Player
 import api
+import requests
 
-player = Player()
-player.play("cantina-band.wav")
+r = requests.post("http://localhost:8080/play?name=" + theFile.ogg")
