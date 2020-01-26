@@ -97,7 +97,8 @@ def songSearch(song):
     #    print("KHAAAAN!!!")
     print("Do you want the song with:"+'\n'
             "1. Lyrics" + '\n'
-            "2. Fast" + '\n')
+            "2. Fast" + '\n'
+            "3. Slow" + '\n')
     print("Enter your selection: ")
     z = str(input())
     if (z == '1'):
@@ -110,4 +111,9 @@ def songSearch(song):
         sd.play(kiss, samplerate * 1.3)  # start playing the music
 
         sd.wait()
-    
+    elif (z == '3'):
+        kiss, samplerate = sf.read('../music/theFile.ogg')  # load Kiss.aiff into kiss variable
+
+        sd.play(kiss, samplerate * .8)  # start playing the music
+
+        sd.wait()
