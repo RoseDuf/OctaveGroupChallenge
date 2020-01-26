@@ -110,10 +110,20 @@ def songSearch(song):
 
         sd.play(kiss, samplerate * 1.3)  # start playing the music
 
-        sd.wait()
+        x = "You probably wont type this"
+        x = input("Type anything and hit enter to stop: ")
+        while(x=='You probably wont type this'):
+            sd.wait()
+
+        sd.stop()
     elif (z == '3'):
         kiss, samplerate = sf.read('../music/theFile.ogg')  # load Kiss.aiff into kiss variable
 
         sd.play(kiss, samplerate * .8)  # start playing the music
 
-        sd.wait()
+        x = "You probably wont type this"
+        x = input("Type anything and hit enter to stop: ")
+        while(x=='You probably wont type this'):
+            sd.wait()
+
+        sd.stop()
